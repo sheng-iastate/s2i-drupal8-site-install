@@ -18,6 +18,9 @@ FROM drupal8-app
 
 # Directory with the sources is set as the working directory so all STI scripts
 # can execute relative to this path
+
+RUN mkdir -p /opt/app-root/drupal8-site-install; chmod 777 /opt/app-root/drupal8-site-install
+
 ENV HOME=/opt/app-root/drupal8-site-install 
 WORKDIR ${HOME}
 
