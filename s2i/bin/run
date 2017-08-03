@@ -7,10 +7,5 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-#set the environmental variables bases on the secrets
-export DBHOST=$(cat /opt/app-root/drupal8-site-install/hostname)
-export DBGRANTUSER=$(cat /opt/app-root/drupal8-site-install/username)
-export DBGRANTUSERPW=$(cat /opt/app-root/drupal8-site-install/password)
-
 
 ./bin/run
